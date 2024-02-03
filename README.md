@@ -12,12 +12,12 @@
    the architecture of each feature is based on the clean architecture of Uncle Bob which is constituted mainly of 3 layers :
    - Data
    - Domain
-   - Controllers
+   - States Holder
 
 ```
 📦features
  ┗ 📂fetch_hello_world
- ┃ ┣ 📂controllers
+ ┃ ┣ 📂states_holder
  ┃ ┣ 📂data
  ┃ ┗ 📂domain
 ```
@@ -241,9 +241,6 @@
  ┣ 📜analysis_options.yaml
  ┗ 📜flutter_native_splash.yaml
 ```
-
-
-
 
 ## Usage and Configuration
 
