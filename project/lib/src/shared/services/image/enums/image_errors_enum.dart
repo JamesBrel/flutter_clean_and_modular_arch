@@ -1,0 +1,4 @@
+enum ImageErrorsType {
+  noImageTakeError,
+  deviceError,
+}
