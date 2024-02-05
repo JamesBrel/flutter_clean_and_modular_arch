@@ -22,12 +22,12 @@ xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:label="@string/app_name"
-        android:name="${applicationName}"
-        android:usesCleartextTraffic="true"
-        android:requestLegacyExternalStorage="true"
+        android:name="${applicationName}"  
         android:logo="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true">
         <activity
             android:name=".MainActivity"
             android:exported="true"

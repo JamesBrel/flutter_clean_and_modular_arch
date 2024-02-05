@@ -9,7 +9,6 @@ assets:
   - assets/images/jpg/
   - assets/images/png/
   - assets/images/svg/
-  - assets/envs/
   - assets/fonts/
 ```
 ### Images

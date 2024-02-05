@@ -4,6 +4,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../shared/constants/envs_const.dart';
 import '../shared/constants/int_const.dart';
 import 'configs/env_config/env_checker.dart';
 import 'configs/injectors_config/injector.dart';
@@ -47,14 +48,9 @@ class Init {
       ]);
     });
 
-    //! initialisation of dotenv
-    await dotenv.load(
-      fileName: "assets/envs/${await EnvChecker.fetchEnv()}.env",
-    );
-
     //! services config init
     // await FirebaseConfig.init(
-    //   env: await EnvChecker.fetchEnv(),
+    //   env: EnvPath.env,
     // );
 
     // HttpOverrides.global = new MyHttpOverridesHelper();

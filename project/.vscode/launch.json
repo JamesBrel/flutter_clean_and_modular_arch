@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "DEV EMULATOR",
+            "name": "DEV",
             "request": "launch",
             "type": "dart",
             "program": "lib/main.dart",
@@ -15,10 +15,12 @@
                 "dev",
                 "--dart-define",
                 "USE_FIREBASE_EMU=true",
+                 "--dart-define-from-file=.env/dev.json",
+
             ],
         },
         {
-            "name": "STAGING DEVICE",
+            "name": "STAGING",
             "request": "launch",
             "type": "dart",
             "program": "lib/main.dart",
@@ -26,10 +28,11 @@
             "toolArgs": [
                 "--flavor",
                 "staging",
+                "--dart-define-from-file=.env/staging.json"
             ],
         },
         {
-            "name": "PROD DEVICE",
+            "name": "PROD",
             "request": "launch",
             "type": "dart",
             "program": "lib/main.dart",
@@ -37,6 +40,7 @@
             "toolArgs": [
                 "--flavor",
                 "prod",
+                "--dart-define-from-file=.env/prod.json",
             ],
         }
     ]
