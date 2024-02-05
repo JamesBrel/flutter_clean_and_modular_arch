@@ -25,6 +25,10 @@
 ## General Folder Structure Tree 
 ```
 📦project
+ ┣ 📂.env
+ ┃ ┣ 📜dev.json
+ ┃ ┣ 📜prod.json
+ ┃ ┗ 📜staging.json
  ┣ 📂.vscode
  ┃ ┗ 📜launch.json
  ┣ 📂android
@@ -36,10 +40,6 @@
  ┃ ┣ 📜key.properties
  ┃ ┗ 📜readme.md
  ┣ 📂assets
- ┃ ┣ 📂envs
- ┃ ┃ ┣ 📜dev.env
- ┃ ┃ ┣ 📜prod.env
- ┃ ┃ ┗ 📜staging.env
  ┃ ┣ 📂fonts
  ┃ ┃ ┗ 📜.gitkeep
  ┃ ┣ 📂images
@@ -66,8 +66,6 @@
  ┃ ┃ ┃ ┃ ┣ 📂device_config
  ┃ ┃ ┃ ┃ ┃ ┣ 📜device_checker.dart
  ┃ ┃ ┃ ┃ ┃ ┗ 📜device_size.dart
- ┃ ┃ ┃ ┃ ┣ 📂env_config
- ┃ ┃ ┃ ┃ ┃ ┗ 📜env_checker.dart
  ┃ ┃ ┃ ┃ ┣ 📂injectors_config
  ┃ ┃ ┃ ┃ ┃ ┣ 📜injector.config.dart
  ┃ ┃ ┃ ┃ ┃ ┗ 📜injector.dart
@@ -123,6 +121,7 @@
  ┃ ┃ ┃ ┣ 📂constants
  ┃ ┃ ┃ ┃ ┣ 📜colors_const.dart
  ┃ ┃ ┃ ┃ ┣ 📜double_const.dart
+ ┃ ┃ ┃ ┃ ┣ 📜envs_const.dart
  ┃ ┃ ┃ ┃ ┣ 📜int_const.dart
  ┃ ┃ ┃ ┃ ┣ 📜lang_const.dart
  ┃ ┃ ┃ ┃ ┣ 📜pngs_const.dart
@@ -238,6 +237,7 @@
  ┃ ┗ 📜main.dart
  ┣ 📂test
  ┃ ┗ 📜.gitkeep
+ ┣ 📜.gitignore
  ┣ 📜analysis_options.yaml
  ┗ 📜flutter_native_splash.yaml
 ```
@@ -262,11 +262,9 @@ the predefined files, such as welcome.dart in the front end and other folders, a
    auto_route: ^7.8.4
    flutter_svg: ^2.0.7
    equatable: ^2.0.5
-   flutter_dotenv: ^5.1.0
    get_it: ^7.6.2
    injectable: ^2.3.2
    flutter_secure_storage: ^9.0.0
-   package_info_plus: ^4.1.0
    shared_preferences: ^2.2.1
    connectivity_plus: ^5.0.1
    internet_connection_checker: ^1.0.0+1
