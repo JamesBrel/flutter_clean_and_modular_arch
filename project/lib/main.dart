@@ -18,7 +18,8 @@ void main() async {
     MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (context) => sl<HelloWorldBloc>(),
+          create: (context) =>
+              sl<HelloWorldBloc>()..add(ReceiveHelloWorldFromSystemEvent()),
         ),
       ],
       child: MyApp(),

@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:firebase_auth/firebase_auth.dart';
 
+import '../../../../constants/lang_const.dart' as lang;
 import '../../configs/firebase_instance.dart';
 import '../../utils/status_util.dart';
 
@@ -23,12 +24,12 @@ class AuthRequest {
         if (firebaseAuthException.code == "invalid-phone-number") {
           _result = {
             "status": FirebaseStatus.badRequest,
-            "message": FirebaseErrorsMessage.verifyErrorText,
+            "message": lang.verifyErrorText,
           };
         } else {
           _result = {
             "status": FirebaseStatus.notFound,
-            "message": FirebaseErrorsMessage.requestErrorTryAgainText,
+            "message": lang.requestErrorTryAgainText,
           };
         }
       },
@@ -41,7 +42,7 @@ class AuthRequest {
       codeAutoRetrievalTimeout: (String verificationId) {
         _result = {
           "status": FirebaseStatus.timeout,
-          "message": FirebaseErrorsMessage.timeErrorText,
+          "message": lang.timeErrorText,
         };
       },
     );
@@ -71,7 +72,7 @@ class AuthRequest {
         } else {
           return {
             "status": FirebaseStatus.noContent,
-            "message": FirebaseErrorsMessage.noContentText,
+            "message": lang.noContentText,
           };
         }
       });

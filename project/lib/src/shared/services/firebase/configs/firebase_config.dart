@@ -1,9 +1,8 @@
-import 'package:contacts_server/src/shared/services/firebase/options/staging/firebase_options_staging.dart'
-    as option_staging;
 import 'package:firebase_core/firebase_core.dart';
 
 import '../options/dev/firebase_emulators_dev.dart';
 import '../options/dev/firebase_options_dev.dart' as option_dev;
+import '../options/staging/firebase_options_staging.dart' as option_staging;
 import '../utils/string_util.dart';
 
 class FirebaseConfig {

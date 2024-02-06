@@ -37,7 +37,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 : Text(
                     Translator.of(context)!.translate(_hello),
                     style: TextStyle(
-                      fontSize: 30.0.sp,
+                      fontSize: 20.0.sp,
                     ),
                   ),
           );

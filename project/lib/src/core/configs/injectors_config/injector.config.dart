@@ -21,6 +21,8 @@ import '../../../modules/hello_world_mod/features/fetch_hello_world/domain/repos
     as _i5;
 import '../../../modules/hello_world_mod/features/fetch_hello_world/domain/usecases/system_say_hello_world_usecase.dart'
     as _i7;
+import '../../../modules/hello_world_mod/features/fetch_hello_world/states_holder/hello_world_bloc/hello_world_bloc.dart'
+    as _i8;
 
 extension GetItInjectableX on _i1.GetIt {
 // initializes the registration of main-scope dependencies inside of GetIt
@@ -42,6 +44,8 @@ extension GetItInjectableX on _i1.GetIt {
         _i7.SystemSayHelloWorldUsecase(
             theSystemSayHelloWorldRepositAbst:
                 gh<_i5.TheSystemSayHelloWorldRepositAbst>()));
+    gh.factory<_i8.HelloWorldBloc>(() => _i8.HelloWorldBloc(
+        systemSayHelloWorldUsecase: gh<_i7.SystemSayHelloWorldUsecase>()));
     return this;
   }
 }

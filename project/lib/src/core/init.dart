@@ -37,7 +37,7 @@ class Init {
 
       //! splash screen remover
       await Future.delayed(const Duration(seconds: splashDuration))
-          .then((value) => {
+          .then((_) => {
                 FlutterNativeSplash.remove(),
               });
 
@@ -53,7 +53,7 @@ class Init {
     //   env: EnvPath.env,
     // );
 
-    // HttpOverrides.global = new MyHttpOverridesHelper();
+    // HttpOverrides.global = new HttpOverridesHelper();
 
     //! initialisation of service locator
     await initSl();

@@ -1,5 +1,3 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-
 import '../../../../constants/lang_const.dart' as lang;
 import '../../configs/firebase_instance.dart';
 import '../../utils/status_util.dart';
