@@ -5,7 +5,7 @@ import 'package:image_cropper/image_cropper.dart';
 
 import '../../../../core/configs/language_config/translator.dart';
 import '../../../constants/colors_const.dart' as color;
-import '../../../constants/lang_const.dart' as lang;
+import '../../../constants/lang_const.dart';
 import '../configs/image_instance.dart';
 import '../messages/note_message.dart';
 
@@ -55,7 +55,7 @@ class ImageCropperRequest {
         )
         .catchError((err) => {
               "status": false,
-              "message": lang.deviceErrorText,
+              "message": Lang.deviceErrorText,
             });
   }
 }

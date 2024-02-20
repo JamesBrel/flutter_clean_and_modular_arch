@@ -1,4 +1,4 @@
-import '../../../../constants/lang_const.dart' as lang;
+import '../../../../constants/lang_const.dart';
 import '../../configs/firebase_instance.dart';
 import '../../utils/status_util.dart';
 
@@ -20,7 +20,7 @@ class FirestoreStreamGetRequest {
       } else {
         return {
           "status": FirebaseStatus.noContent,
-          "message": lang.noContentText,
+          "message": Lang.noContentText,
         };
       }
     });
@@ -41,7 +41,7 @@ class FirestoreStreamGetRequest {
       } else {
         return {
           "status": FirebaseStatus.noContent,
-          "message": lang.noContentText,
+          "message": Lang.noContentText,
         };
       }
     });

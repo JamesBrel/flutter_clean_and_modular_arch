@@ -50,5 +50,6 @@ linter:
     void_checks: false
     use_key_in_widget_constructors: false
     slash_for_doc_comments: true
+    unnecessary_null_in_if_null_operators: false
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options

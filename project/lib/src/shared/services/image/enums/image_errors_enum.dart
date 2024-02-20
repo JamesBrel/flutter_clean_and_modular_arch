@@ -1,4 +1,0 @@
-enum ImageErrorsType {
-  noImageTakeError,
-  deviceError,
-}

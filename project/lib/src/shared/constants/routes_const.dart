@@ -1,3 +1,3 @@
 class RoutePath {
-  static const welcomePath = "/WelcomeRoute";
+  static const welcomePath = "/welcomeRoute";
 }

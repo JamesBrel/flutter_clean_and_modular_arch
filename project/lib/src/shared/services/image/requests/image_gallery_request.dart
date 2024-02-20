@@ -1,6 +1,6 @@
 import 'package:image_picker/image_picker.dart';
 
-import '../../../constants/lang_const.dart' as lang;
+import '../../../constants/lang_const.dart';
 import '../configs/image_instance.dart';
 
 class ImageGalleryRequest {
@@ -17,13 +17,13 @@ class ImageGalleryRequest {
         } else {
           return {
             "status": false,
-            "message": lang.noImageTaketext,
+            "message": Lang.noImageTaketext,
           };
         }
       },
     ).catchError((err) => {
               "status": false,
-              "message": lang.deviceErrorText,
+              "message": Lang.deviceErrorText,
             });
   }
 }

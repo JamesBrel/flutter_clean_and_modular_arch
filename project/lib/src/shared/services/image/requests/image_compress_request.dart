@@ -1,6 +1,6 @@
 import 'package:flutter_native_image/flutter_native_image.dart';
 
-import '../../../constants/lang_const.dart' as lang;
+import '../../../constants/lang_const.dart';
 
 class ImageCompressRequest {
   static Future<Map<String, dynamic>> compressTheImage({
@@ -19,7 +19,7 @@ class ImageCompressRequest {
         )
         .catchError((err) => {
               "status": false,
-              "message": lang.deviceErrorText,
+              "message": Lang.deviceErrorText,
             });
   }
 }

@@ -41,14 +41,10 @@
  ┃ ┗ 📜readme.md
  ┣ 📂assets
  ┃ ┣ 📂fonts
- ┃ ┃ ┗ 📜.gitkeep
  ┃ ┣ 📂images
  ┃ ┃ ┣ 📂jpg
- ┃ ┃ ┃ ┗ 📜.gitkeep
  ┃ ┃ ┣ 📂png
- ┃ ┃ ┃ ┗ 📜.gitkeep
  ┃ ┃ ┗ 📂svg
- ┃ ┃ ┃ ┗ 📜.gitkeep
  ┃ ┣ 📂languages
  ┃ ┃ ┣ 📜en.json
  ┃ ┃ ┗ 📜fr.json
@@ -56,9 +52,7 @@
  ┣ 📂integration_test
  ┃ ┗ 📂views
  ┃ ┃ ┣ 📂screens
- ┃ ┃ ┃ ┗ 📜.gitkeep
  ┃ ┃ ┗ 📂widgets
- ┃ ┃ ┃ ┗ 📜.gitkeep
  ┣ 📂lib
  ┃ ┣ 📂src
  ┃ ┃ ┣ 📂core
@@ -90,19 +84,14 @@
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂impls
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜say_the_hello_world_impl.dart
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📂models
- ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜.gitkeep
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂remote_source
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂absts
- ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜.gitkeep
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂impls
- ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜.gitkeep
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📂models
- ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜.gitkeep
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📂reposit_impls
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜the_system_say_hello_world_reposit_impl.dart
  ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂domain
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂entities
- ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜.gitkeep
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂reposit_absts
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜the_system_say_hello_world_reposit_abst.dart
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📂usecases
@@ -116,7 +105,6 @@
  ┃ ┃ ┃ ┃ ┃ ┣ 📂screens
  ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜welcome_screen.dart
  ┃ ┃ ┃ ┃ ┃ ┗ 📂widgets
- ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜.gitkeep
  ┃ ┃ ┗ 📂shared
  ┃ ┃ ┃ ┣ 📂constants
  ┃ ┃ ┃ ┃ ┣ 📜colors_const.dart
@@ -160,6 +148,8 @@
  ┃ ┃ ┃ ┃ ┃ ┣ 📂configs
  ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜firebase_config.dart
  ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜firebase_instance.dart
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂database
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜user_model.dart
  ┃ ┃ ┃ ┃ ┃ ┣ 📂options
  ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂dev
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜firebase_emulators_dev.dart
@@ -200,10 +190,7 @@
  ┃ ┃ ┃ ┃ ┣ 📂image
  ┃ ┃ ┃ ┃ ┃ ┣ 📂configs
  ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜image_instance.dart
- ┃ ┃ ┃ ┃ ┃ ┣ 📂enums
- ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜image_errors_enum.dart
  ┃ ┃ ┃ ┃ ┃ ┣ 📂messages
- ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜image_errors_message.dart
  ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜note_message.dart
  ┃ ┃ ┃ ┃ ┃ ┗ 📂requests
  ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜image_camera_request.dart
@@ -214,6 +201,8 @@
  ┃ ┃ ┃ ┃ ┃ ┣ 📂configs
  ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜isar_config.dart
  ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜isar_instance.dart
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂database
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📂user_models
  ┃ ┃ ┃ ┃ ┃ ┣ 📂requests
  ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📂isar_requests
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜isar_delete_request.dart
@@ -222,8 +211,6 @@
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜isar_update_request.dart
  ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📂isar_stream_requests
  ┃ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜isar_get_stream_request.dart
- ┃ ┃ ┃ ┃ ┃ ┣ 📂schemas
- ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜.gitkeep
  ┃ ┃ ┃ ┃ ┃ ┗ 📂utils
  ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜statuts_util.dart
  ┃ ┃ ┃ ┃ ┗ 📂security
@@ -232,11 +219,9 @@
  ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜encrypt_request.dart
  ┃ ┃ ┃ ┗ 📂ui
  ┃ ┃ ┃ ┃ ┣ 📂screens
- ┃ ┃ ┃ ┃ ┃ ┗ 📜welcome_screen.dart
  ┃ ┃ ┃ ┃ ┗ 📂widgets
  ┃ ┗ 📜main.dart
  ┣ 📂test
- ┃ ┗ 📜.gitkeep
  ┣ 📜.gitignore
  ┣ 📜analysis_options.yaml
  ┗ 📜flutter_native_splash.yaml

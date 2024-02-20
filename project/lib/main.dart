@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) => MaterialApp.router(
         routerConfig: _autoRoutes.config(),
-        debugShowCheckedModeBanner: true,
+        debugShowCheckedModeBanner: kDebugMode,
         title: app,
         theme: LightTheme.light,
         localizationsDelegates: const [

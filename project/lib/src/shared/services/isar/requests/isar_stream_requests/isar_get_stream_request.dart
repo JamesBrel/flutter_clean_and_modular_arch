@@ -1,6 +1,6 @@
 import 'package:isar/isar.dart';
 
-import '../../../../constants/lang_const.dart' as lang;
+import '../../../../constants/lang_const.dart';
 import '../../configs/isar_instance.dart';
 import '../../utils/statuts_util.dart';
 
@@ -18,7 +18,7 @@ class IsarGetStreamRequest {
       } else {
         return {
           "status": IsarStatus.noContent,
-          "message": lang.noContentText,
+          "message": Lang.noContentText,
         };
       }
     });
@@ -35,7 +35,7 @@ class IsarGetStreamRequest {
       } else {
         return {
           "status": IsarStatus.noContent,
-          "message": lang.noContentText,
+          "message": Lang.noContentText,
         };
       }
     });
