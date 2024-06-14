@@ -1,37 +1,51 @@
-import 'package:http/http.dart' as http;
-import 'package:http/http.dart';
+// todo : Remove the comment marks once to enable this file
 
-class HttpPostRequest {
-  static Future<Response> post({
-    required String apiUri,
-    required dynamic contentBody,
-    required Map<String, String> headers,
-  }) async {
-    var _response = await http.post(
-      Uri.parse(apiUri),
-      headers: headers,
-      body: contentBody,
-    );
-    return _response;
-  }
+// import 'package:dio/dio.dart';
 
-//   Future<String> put() async {
-//     return "";
+// import '../../../constants/lang_const.dart';
+// import '../configs/dio_instance.dart';
+
+// class HttpPostRequest {
+//   static Future<Map<String, dynamic>> post({
+//     required String api,
+//     required String content,
+//     required Map<String, String> headers,
+//   }) async {
+//     return await dio
+//         .post<String>(
+//           api,
+//           data: content,
+//           options: Options(
+//             headers: headers,
+//           ),
+//         )
+//         .then((response) => {
+//               "status": true,
+//               "response": response,
+//             })
+//         .onError<DioException>((error, stackTrace) {
+//       return {
+//         "status": false,
+//         "message": error.type == DioExceptionType.connectionTimeout ||
+//                 error.type == DioExceptionType.receiveTimeout
+//             ? Lang.timeError
+//             : Lang.unknownError,
+//       };
+//     });
 //   }
 
-//   Future<String> delete() async {
-//     return "";
+//   static Future<Response<String>> postFile({
+//     required String api,
+//     required FormData content,
+//     required Map<String, String> headers,
+//   }) async {
+//     var _response = await dio.post<String>(
+//       api,
+//       data: content,
+//       options: Options(
+//         headers: headers,
+//       ),
+//     );
+//     return _response;
 //   }
-
-//   Future<String> patch() async {
-//     return "";
-//   }
-
-//   Future<String> head() async {
-//     return "";
-//   }
-
-//   Future<String> options() async {
-//     return "";
-//   }
-}
+// }

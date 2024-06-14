@@ -1,24 +1,26 @@
-import 'package:isar/isar.dart';
+// todo : Remove the comment marks once to enable this file 
 
-import '../../configs/isar_instance.dart';
-import '../../utils/statuts_util.dart';
+// import 'package:isar/isar.dart';
 
-class IsarDeleteRequest {
-  static Future<Map<String, dynamic>> deleteOne<Type>({
-    required int id,
-  }) async {
-    var _collection = IsarInstance.isarDb!.collection<Type>();
-    return await _collection.delete(id).then((dataId) => {
-          "status": IsarStatus.ok,
-        });
-  }
+// import '../../configs/isar_instance.dart';
+// import '../../utils/statuts_util.dart';
 
-  static Future<Map<String, dynamic>> deleteAll<Type>({
-    required List<int> ids,
-  }) async {
-    var _collection = IsarInstance.isarDb!.collection<Type>();
-    return await _collection.deleteAll(ids).then((dataIds) => {
-          "status": IsarStatus.ok,
-        });
-  }
-}
+// class IsarDeleteRequest {
+//   static Future<Map<String, dynamic>> deleteOne<Type>({
+//     required int id,
+//   }) async {
+//     var _collection = IsarInstance.isarDb!.collection<Type>();
+//     return await _collection.delete(id).then((dataId) => {
+//           "status": IsarStatus.ok,
+//         });
+//   }
+
+//   static Future<Map<String, dynamic>> deleteAll<Type>({
+//     required List<int> ids,
+//   }) async {
+//     var _collection = IsarInstance.isarDb!.collection<Type>();
+//     return await _collection.deleteAll(ids).then((dataIds) => {
+//           "status": IsarStatus.ok,
+//         });
+//   }
+// }

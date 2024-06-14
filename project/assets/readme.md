@@ -9,6 +9,7 @@ assets:
   - assets/images/jpg/
   - assets/images/png/
   - assets/images/svg/
+  - assets/images/gif/
   - assets/fonts/
 ```
 ### Images

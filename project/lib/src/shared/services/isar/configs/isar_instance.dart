@@ -1,6 +1,9 @@
-import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:isar/isar.dart';
+// todo : Remove the comment marks once to enable this file 
 
-class IsarInstance {
-  static var isarDb = Isar.getInstance("${dotenv.env["INSTANCE_NAME"]}");
-}
+// import 'package:app_test/src/shared/constants/envs_const.dart';
+
+// import 'package:isar/isar.dart';
+
+// class IsarInstance {
+//   static var isarDb = Isar.getInstance(EnvPath.instanceName);
+// }

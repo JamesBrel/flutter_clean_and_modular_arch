@@ -1,13 +1,15 @@
-import '../../configs/cache_instance.dart';
+// todo : Remove the comment marks once to enable this file
 
-class StoragePutRequest {
-  static Future<void> put({
-    required String key,
-    required String data,
-  }) async {
-    await secureStorage.write(
-      key: key,
-      value: data,
-    );
-  }
-}
+// import '../../configs/cache_instance.dart';
+
+// class StoragePutRequest {
+//   static Future<void> put({
+//     required String key,
+//     required String data,
+//   }) async {
+//     await secureStorage.write(
+//       key: key,
+//       value: data,
+//     );
+//   }
+// }

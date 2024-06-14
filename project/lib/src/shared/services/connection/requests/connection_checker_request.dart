@@ -1,18 +1,11 @@
-import 'package:connectivity_plus/connectivity_plus.dart';
+// todo : Remove the comment marks once to enable this file
 
-import '../configs/connection_instance.dart';
+// import 'package:flutter/foundation.dart';
 
-class ConnectionCheckerRequest {
-  static Future<bool> check() async {
-    return await connectivity
-        .checkConnectivity()
-        .then((connectivityResult) async {
-      if (connectivityResult == ConnectivityResult.mobile ||
-          connectivityResult == ConnectivityResult.wifi) {
-        return await internetConnectivity.hasConnection;
-      } else {
-        return false;
-      }
-    });
-  }
-}
+// import '../configs/connection_instance.dart';
+
+// class ConnectionCheckerRequest {
+//   static Future<bool> check() async {
+//     return kDebugMode ? true : await internetConnectivity.hasInternetAccess;
+//   }
+// }

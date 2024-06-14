@@ -1,6 +1,6 @@
 import 'package:injectable/injectable.dart';
 
-import '../../../../../../../shared/constants/lang_const.dart' as lang;
+import '../../../../../../../shared/constants/lang_const.dart';
 import '../absts/say_the_hello_world_abst.dart';
 
 /// @Project: [Project_name],
@@ -16,6 +16,6 @@ class SayTheHelloWorldImpl implements SayTheHelloWorldAbst {
   /// Note: This method return the salutation to world
   @override
   String sayHelloWorld() {
-    return lang.welcomeText;
+    return Lang.welcome;
   }
 }

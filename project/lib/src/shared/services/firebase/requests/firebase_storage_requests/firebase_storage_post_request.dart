@@ -1,34 +1,36 @@
-import 'dart:async';
-import 'dart:io';
+// todo : Remove the comment marks once to enable this file  
 
-import 'package:firebase_storage/firebase_storage.dart';
+// import 'dart:async';
+// import 'dart:io';
 
-import '../../../../constants/lang_const.dart';
-import '../../configs/firebase_instance.dart';
-import '../../utils/status_util.dart';
+// import 'package:firebase_storage/firebase_storage.dart';
 
-class FirebaseStoragePostRequest {
-  static Future<Map<String, dynamic>> uploadFile({
-    required String folderRef,
-    required String fileName,
-    required String filePath,
-  }) async {
-    return await firebaseStorage
-        .ref(folderRef)
-        .child(fileName)
-        .putFile(
-            File(filePath),
-            SettableMetadata(
-              contentType: "image/png",
-            ))
-        .then<Map<String, dynamic>>(
-          (p0) => {
-            "status": FirebaseStatus.created,
-          },
-        )
-        .catchError((err) => {
-              "status": FirebaseStatus.internalServerError,
-              "message": Lang.serverErrorText,
-            });
-  }
-}
+// import '../../../../constants/lang_const.dart';
+// import '../../configs/firebase_instance.dart';
+// import '../../utils/status_util.dart';
+
+// class FirebaseStoragePostRequest {
+//   static Future<Map<String, dynamic>> uploadFile({
+//     required String folderRef,
+//     required String fileName,
+//     required String filePath,
+//   }) async {
+//     return await firebaseStorage
+//         .ref(folderRef)
+//         .child(fileName)
+//         .putFile(
+//             File(filePath),
+//             SettableMetadata(
+//               contentType: "image/png",
+//             ))
+//         .then<Map<String, dynamic>>(
+//           (p0) => {
+//             "status": FirebaseStatus.created,
+//           },
+//         )
+//         .catchError((err) => {
+//               "status": FirebaseStatus.internalServerError,
+//               "message": Lang.serverError,
+//             });
+//   }
+// }

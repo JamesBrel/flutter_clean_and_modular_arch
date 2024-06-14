@@ -1,3 +1,3 @@
-/// Take this like example to edit the other constants files
-const organization = "name_of_organization";
+// add the name of your app project
+
 const app = "title_of_app";

@@ -1,5 +1,5 @@
-import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:internet_connection_checker/internet_connection_checker.dart';
+// todo : Remove the comment marks once to enable this file
 
-var connectivity = Connectivity();
-var internetConnectivity = InternetConnectionChecker();
+// import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart';
+
+// var internetConnectivity = InternetConnection();

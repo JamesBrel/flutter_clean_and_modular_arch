@@ -1,7 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/configs/language_config/translator.dart';
 import '../../features/fetch_hello_world/states_holder/hello_world_bloc/hello_world_bloc.dart';
@@ -19,8 +18,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
 
   @override
   void initState() {
-    _hello = "";
     super.initState();
+    _hello = "";
   }
 
   @override
@@ -36,8 +35,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 ? Container()
                 : Text(
                     Translator.of(context)!.translate(_hello),
-                    style: TextStyle(
-                      fontSize: 20.0.sp,
+                    style: const TextStyle(
+                      fontSize: 20.0,
                     ),
                   ),
           );
