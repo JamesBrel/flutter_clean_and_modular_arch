@@ -1,11 +1,10 @@
 // todo : Remove the comment marks once to activate the lines you need to develop your project.
 
 import 'package:flutter/material.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 
+// import 'package:flutter_native_splash/flutter_native_splash.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
-
-import '../shared/constants/int_const.dart';
+// import '../shared/constants/int_const.dart';
 // import 'configs/assets_config/assets.gen.dart';
 import 'configs/injectors_config/injector.dart';
 
@@ -14,7 +13,7 @@ class Init {
     //! WidgetFlutter and DeviceType Initialization
     // active these lines down
     WidgetsFlutterBinding.ensureInitialized().addPostFrameCallback((_) async {
-      Element? context = WidgetsFlutterBinding.ensureInitialized().rootElement;
+      // Element? context = WidgetsFlutterBinding.ensureInitialized().rootElement;
 
       //! Prelod All the svg
       // final svgs = [];
@@ -42,10 +41,10 @@ class Init {
       // }
 
       //! splash screen remover
-      await Future.delayed(const Duration(seconds: splashDuration))
-          .then((_) => {
-                FlutterNativeSplash.remove(),
-              });
+      // await Future.delayed(const Duration(seconds: splashDuration))
+      //     .then((_) => {
+      //           FlutterNativeSplash.remove(),
+      //         });
 
       //! screen config
       // WindowConfig.windows();
@@ -59,6 +58,6 @@ class Init {
     // HttpOverrides.global = new HttpOverridesHelper();
 
     //! initialisation of service locator
-    await initSl();
+    await dependencyInit();
   }
 }

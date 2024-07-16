@@ -2,6 +2,15 @@
 
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*
 
+## [1.1.1 => Small correction on readme] - 2024-07-16
+### Added
+- Add lib folder structure
+- Add gif folder
+
+### Changed
+- Changing digital versions to "last version"
+
+
 ## [1.1.0 => Small architecture update] - 2024-06-14
 ### Added
 - Add a folder named assets_config

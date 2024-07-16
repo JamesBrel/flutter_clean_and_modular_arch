@@ -8,4 +8,4 @@ var sl = GetIt.instance;
   generateForDir: ["lib", "test"],
   preferRelativeImports: true,
 )
-Future<void> initSl() async => sl.init();
+Future<void> dependencyInit() async => sl.init();
